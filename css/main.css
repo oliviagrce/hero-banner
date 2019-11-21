@@ -1,15 +1,23 @@
 html {
   box-sizing: border-box;
   font-family: serif;
+  padding: 0;
+  margin: 0;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
 }
 
+body {
+  background-color: #fff;
+  margin: 0;
+}
+
 .banner {
   position: relative;
   max-height: 500px;
+  overflow: hidden;
 }
 
 img {
@@ -17,10 +25,17 @@ img {
 }
 
 .img-flex {
-  display: flex;
-  flex-wrap: wrap;
-  position: absolute;
+  display: block;
   max-width: 50em;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  text-align: left;
+  top: 5px;
+  left: 25px;
+  right: 25px;
+  bottom: 10px;
+  width: 100%;
 }
 
 h2 {
@@ -28,10 +43,14 @@ h2 {
   background-color: rgba(0, 0, 0, .5);
   color: #fff;
   font-size: 4rem;
-  font-weight: bold;
-  flex-wrap: wrap;
+  font-weight: bolder;
+  margin: 0;
+  padding: 0;
 }
 
 p {
   font-size: 2rem;
+  padding-top: 1rem;
+  margin: 0;
+  font-style: italic;
 }
